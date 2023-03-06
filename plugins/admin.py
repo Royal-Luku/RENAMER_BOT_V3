@@ -28,8 +28,8 @@ async def buypremium(bot, message):
 async def vip(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-	inlimit  = 10737418240000
-	uploadlimit(int(user_id),10737418240000)
+	inlimit  = 214748364800
+	uploadlimit(int(user_id),214748364800)
 	usertype(int(user_id),"VIP")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Users")
