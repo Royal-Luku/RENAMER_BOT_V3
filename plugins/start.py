@@ -22,11 +22,11 @@ botid = token.split(':')[0]
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-	wish = "Good morning."
+	wish = "Good Morning!"
 elif 12 <= currentTime.hour < 12:
-	wish = 'Good afternoon.'
+	wish = 'Good Afternoon!'
 else:
-	wish = 'Good evening.'
+	wish = 'Good Evening!'
 
 #-------------------------------
 
@@ -37,42 +37,42 @@ async def start(client,message):
 	    id = message.text.split(' ')[1]
 	except:
 	    await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
+	**Hello {wish} {message.from_user.first_name }
 	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	Document Or Video and enter new filename to rename it__**
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/GreyMatter_Bots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@GreyMattersYT") ]  ]))
+	 [[ InlineKeyboardButton("Devoloper 🇮🇳" ,url="https://t.me/Royaldwip") ], 
+	[InlineKeyboardButton("Must Join", url="https://t.me/worldofmovies8") ]  ]))
 	    return
 	if id:
 	    if old == True:
 	        try:
 	            await client.send_message(id,"Your Frind Alredy Using Our Bot")
 	            await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
+	Hello {wish} {message.from_user.first_name } 😃\n\n
 	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	**Document Or Video** and enter new filename to rename it__**
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/GreyMatter_Bots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@GreyMattersYT") ]  ]))
+	 [[ InlineKeyboardButton("Devoloper 🇮🇳" ,url="https://t.me/Royaldwip") ], 
+	[InlineKeyboardButton("Must Join", url="https://t.me/worldofmovies8") ]  ]))
 	        except:
 	             return
 	    else:
-	         await client.send_message(id,"Congrats! You Won 2000MB Upload limit")
+	         await client.send_message(id,"Congrats! You Won 200 MB Upload limit")
 	         _user_= find_one(int(id))
 	         limit = _user_["uploadlimit"]
 	         new_limit = limit + 2147483648
 	         uploadlimit(int(id),new_limit)
 	         await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
+	Hello {wish} {message.from_user.first_name } 😃\n\n
 	__I am file renamer bot, Please sent any telegram 
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/GreyMatter_Bots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@GreyMattersYT") ]  ]))
+	 [[ InlineKeyboardButton("Devoloper 🇮🇳" ,url="https://t.me/Royaldwip") ], 
+	[InlineKeyboardButton("Must Join", url="https://t.me/worldofmovies8") ]  ]))
 	         
 
 
@@ -85,10 +85,10 @@ async def send_doc(client,message):
        	try:
        		await client.get_chat_member(update_channel, user_id)
        	except UserNotParticipant:
-       		await message.reply_text("**__You are not subscribed my channel__** ",
+       		await message.reply_text("**Join My Updated Channel To Use Me!!** ",
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
+       		[ [ InlineKeyboardButton("Click Here To Join" ,url=f"https://t.me/{update_channel}") ]   ]))
        		return
        try:
            bot_data = find_one(int(botid))
@@ -96,14 +96,14 @@ async def send_doc(client,message):
            prsize = bot_data['total_size']
            user_deta = find_one(user_id)
        except:
-           await message.reply_text("Use About cmd first /about")
+           await message.reply_text("Some Error Occurred Contact Devoloper")
        try:
        	used_date = user_deta["date"]
        	buy_date= user_deta["prexdate"]
        	daily = user_deta["daily"]
        	user_type = user_deta["usertype"]
        except:
-           await message.reply_text("database has been Cleared click on /start")
+           await message.reply_text("📡 Server Problem Coming.....")
            return
            
            
@@ -118,7 +118,7 @@ async def send_doc(client,message):
        conversion = datetime.timedelta(seconds=left)
        ltime = str(conversion)
        if left > 0:       	    
-       	await message.reply_text(f"```Sorry Dude I am not only for YOU \n Flood control is active so please wait for {ltime}``` or buy premium /myplan",reply_to_message_id = message.id)
+       	await message.reply_text(f"Flood Control Is Now Active Wait For```{ltime}```",reply_to_message_id = message.id)
        else:
        		# Forward a single message
            		
@@ -171,7 +171,7 @@ async def send_doc(client,message):
        		    fileid = file.file_id
        		    total_rename(int(botid),prrename)
        		    total_size(int(botid),prsize,file.file_size)
-       		    await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
+       		    await message.reply_text(f"""__What do you want me to do with this file?__\n\n**📁 File Name** :- {filename}\n\n**⚙️ File Size** :- {filesize}\n**📡 Data Center** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
        		[[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),
        		InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
        		
