@@ -8,19 +8,19 @@ async def upgrade(bot,update):
 	Daily  Upload limit 2GB
 	Price 0
 	
-	**VIP** 
+      ✅ **VIP** 
 	Daily  Upload  limit unlimited
-	Price Rs 100  🇮🇳/🌎 2$  per Month
+	Price Rs 100  🇮🇳
 	
 	
-	Pay Using Upi I'd ```greymatter658@ybl```
+	Pay Using Upi I'd ```adityakar052@paytm```
 	
 	After Payment Send Screenshots Of 
         Payment To Admin"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/OTT_Zone_Admin")], 
-        			[InlineKeyboardButton("PayPal 🌎",url = "https://www.paypal.me/mokshb658"),
-        			InlineKeyboardButton("Other Methods",url = "https://t.me/GreyMatters_about/66")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("Send ScreenShot ",url = "https://t.me/Royaldwip")], 
+        			[InlineKeyboardButton("Channel",url = "https://t.me/FoxPrimeBots"),
+        			InlineKeyboardButton("Join",url = "https://t.me/WomBackup")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
@@ -30,17 +30,17 @@ async def upgradecm(bot,message):
 	Daily  Upload limit 2GB
 	Price 0
 	
-	**VIP** 
+      ✅ **VIP** 
 	Daily  Upload  limit unlimited 
-	Price Rs 100  🇮🇳/🌎 2$  per Month
+	Price Rs 100 🇮🇳 
 	
 	
-	Pay Using Upi I'd ```greymatter658@ybl```
+	Pay Using Upi Id ```adityakar052@paytm```
 	
 	After Payment Send Screenshots Of 
         Payment To Admin"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/OTT_Zone_Admin")], 
-        			[InlineKeyboardButton("PayPal 🌎",url = "https://www.paypal.me/mokshb658"),
-        			InlineKeyboardButton("Other Methods",url = "https://t.me/GreyMatters_about/66")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
-	await message.reply_text(text = text,reply_markup = keybord)
+        			InlineKeyboardButton("Send ScreenShot ",url = "https://t.me/Royaldwip")], 
+        			[InlineKeyboardButton("Channel",url = "https://t.me/FoxPrimeBots"),
+        			InlineKeyboardButton("Join",url = "https://t.me/WomBackup")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+	await update.message.edit(text = text,reply_markup = keybord)
